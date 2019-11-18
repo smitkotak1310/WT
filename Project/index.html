@@ -11,15 +11,18 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	
 	<script type="text/javascript">
-		$document.ready(function()
+		$(document).ready(function()
 		{
 			$(".hide").click(function()
 			{
-				$("p").hide();
+				$('p').hide(1000);
+			});
+			$(".show").click(function()
+			{
+				$('p').show(1000);
 			});
 		});
-	</script>	
-	
+	</script>
 </head>
 <body>
 	<header>
@@ -45,7 +48,7 @@
 	<div class="container">
 		<div class="row" style="margin: 50px 0px;">
 			<div class="col-md-4" style="height: 300px;padding: 10px;">
-				<div class="cards" id="cards">
+				<div class="cards">
 					<div class=" bg-danger">
 						<img src="images/home1.jpeg" style="height: 100%;width:100%;">
 					</div>
@@ -55,7 +58,7 @@
 				</div>
 			</div>
 			<div class="col-md-4" style="height: 300px;padding: 10px;">
-				<div class="cards" id="cards">
+				<div class="cards">
 					<div class=" bg-danger">
 						<img src="images/home2.jpg" style="height: 100%;width:100%;">
 					</div>
@@ -65,7 +68,7 @@
 				</div>
 			</div>
 			<div class="col-md-4" style="height: 300px;padding: 10px;">
-				<div class="cards" id="cards">
+				<div class="cards">
 					<div class=" bg-danger">
 						<img src="images/home3.jpeg" style="height: 100%;width:100%;">
 					</div>
@@ -103,16 +106,13 @@
 						<h4>Party</h4>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-12" style="padding: 15px 20px;">
-				<div class="bg-info col-lg-12" style="margin:10px 0px;">
-					
+
+				<div style="height: 50px; width: 500px;">
+					<button style="position: fix; margin-left: 270px;" class="hide">Hide</button>
+				<button class="show">Show</button>
 				</div>
-				<input type="submit" class="hide" style="margin-left: 280px;">
-				<button style="margin-left: 300px;" class="hide">Hide</button>
-			</div>
 		</div>
-		<p> With a vision of bringing Indian Cuisine back “in-Vogue”, Farzi Café endeavours to showcase a unique, modernist approach to Indian food, where guests not only enjoy culinary innovations as part of it’s...</p>
+		<p style="margin-top: 50px;"> With a vision of bringing Indian Cuisine back “in-Vogue”, Moj Masti Café endeavours to showcase a unique, modernist approach to Indian food, where guests not only enjoy culinary innovations as part of it’s...</p>
 <!-- 
 	<script>
 		function slide()
